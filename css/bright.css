@@ -1,0 +1,30 @@
+.Flex-color-Special
+{
+    text-shadow: 0 0 10px #fff,
+    0 0 20px  #fff,
+    0 0 30px  #fff,
+    0 0 40px  #00c0ef,
+    0 0 70px  #00c0ef,
+    0 0 80px  #00c0ef,
+    0 0 100px #00c0ef,
+    0 0 150px #00c0ef;
+}
+
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    50% {
+        opacity: 0.5; /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 1; /*结尾状态 透明度为1*/
+    }
+}
+
+.Flex-fadeIn {
+    -webkit-animation-name: fadeIn; /*动画名称*/
+    -webkit-animation-duration: 8s; /*动画持续时间*/
+    -webkit-animation-iteration-count: infinite; /*动画次数 infinite 为无限 否则就是具体次数*/
+}

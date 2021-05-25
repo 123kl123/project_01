@@ -1,0 +1,222 @@
+
+/* 把我们所有标签的内外边距清零 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/* em 和 i 斜体的文字不倾斜 */
+p,
+i {
+    font-style: normal
+}
+/* 去掉li 的小圆点 */
+li {
+    list-style: none
+}
+
+img {
+    /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle
+}
+.header{
+    height: 120px;
+    background-color: #a30909;
+    /*text-align: center;*/
+}
+.header h1 {
+    color: #fff
+}
+h1 {
+    text-align: center;
+    /* color: #fff; */
+    line-height: 120px;
+  
+}
+
+
+.nav ul {
+    display: table;		 /*这里是关键步骤：*/
+    margin: 0 auto;      /*让ul在div中水平居中 */
+    /* border: 1px solid #f00; */
+
+}
+.nav ul li {
+    margin: 10px auto;
+    font-size: 16px;
+    float: left;
+    direction: none;
+    text-align: center;  /*让li在ul中水平居中*/
+    height: 40px;
+    line-height: 40px;   /*垂直居中*/
+    width: 250px;        /*任意设置li的宽度，不设置宽度的话也可以设置padding*/
+
+    
+}
+.nav ul::after {     /*清除浮动 */
+    content: '';
+    display: inline-block;
+    clear: both;
+}
+
+.nav ul li a:hover {
+    background-color: #a30909;
+    color: #fff;
+}
+.nav ul li a {
+    display: block;
+    text-decoration: none;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    padding: 0 60px;
+    border-radius: 10px;
+}
+
+.focus {
+    width: 1400px;
+    height: 600px;
+    margin: 5px auto;
+
+}
+
+.swiper img {
+    width: 100%;
+    
+}
+
+.swiper-container {
+   width: 100%;
+   height: 100%;
+  }
+  .swiper-slide img {
+    width: 1400px;
+    height: 600px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+
+  .main {
+      margin: 0 auto;
+      width: 1400px;
+      height: 2040px;
+      border-top: solid 2px #a30909;
+
+  }
+
+
+
+  .footer {
+    margin: 5px auto;
+    height: 200px;
+      width: 1400px;
+      border-radius: 15px;
+      background-image: url("../images/7.png");
+  }
+ .mainly {
+     float: left;
+     transition: all 0.3s;
+ }
+.mainly:hover{
+    transform: rotate(360deg);
+}
+ .mainlys {
+     float: right;
+     transition: all 0.3s;
+ }
+.mainlys:hover{
+    transform: rotate(360deg);
+}
+
+.mainly img,
+.mainlys img{
+    width: 700px;
+    height: 509px;
+    
+}
+
+
+
+.mains {
+    float: right;
+    /* background-color: lightgray; */
+    vertical-align: top;
+    width: 700px;
+    height: 509px;
+
+}
+.mains h1{
+    transition: all 1s;
+}
+
+.mains h1:hover{
+    transform: translate(-5px,-5px);
+    color: #a30909;
+}
+
+.mains p{
+    transition: all 1s;
+}
+
+.mains p:hover{
+    transform: translateY(-10px);
+    color: red;
+    font-weight: bold;
+}
+
+
+.maind {
+    float: left;
+    /* background-color: lightgray; */
+    vertical-align: top;
+    width: 700px;
+    height: 509px;
+}
+.maind h1{
+    transition: all 1s;
+}
+
+.maind h1:hover{
+    transform: translate(-5px,-5px);
+    color: #a30909;
+}
+
+.maind p{
+    transition: all 1s;
+}
+
+.maind p:hover{
+    transform: translateY(-10px);
+    color: red;
+    font-weight: bold;
+}
+
+
+p {
+    font-size: 25px;
+    color: black;
+    padding: 50px;
+    text-indent: 2em;
+}
